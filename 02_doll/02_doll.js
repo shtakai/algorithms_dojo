@@ -16,15 +16,15 @@ var RussianDoll = function (value) {
 
     self.saying = function () {
         console.log('saying', _value);
-    }
+    };
 
     self.openUp = function () {
-        if (_doll != null) {
+        if (_doll !== null) {
             return _doll;
         } else {
             console.log('no more doll!');
         }
-    }
+    };
 
     self.addDoll = function (doll) {
         if (self === doll) {
@@ -32,12 +32,12 @@ var RussianDoll = function (value) {
         } else {
             _doll = doll;
         }
-    }
-}
+    };
+};
 
-doll_1 = new RussianDoll("doll_1");
-doll_1.saying();
-doll_2 = new RussianDoll("doll_2");
-doll_1.addDoll(doll_2);
-doll_1.openUp().saying();
+//doll_1 = new RussianDoll("doll_1");
+//doll_1.saying();
+//doll_2 = new RussianDoll("doll_2");
+//doll_1.addDoll(doll_2);
+//doll_1.openUp().saying();
 
