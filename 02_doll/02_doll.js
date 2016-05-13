@@ -14,15 +14,21 @@ var RussianDoll = function (value) {
     var _doll = null;
     var _value = value;
 
+    self.show = function () {
+      return value;
+    }
+
     self.saying = function () {
         console.log('saying', _value);
+        return 'saying' + _value;
     };
 
     self.openUp = function () {
         if (_doll !== null) {
-            return _doll;
+          return _doll;
         } else {
-            console.log('no more doll!');
+          console.log('no more doll!');
+          return null;
         }
     };
 
